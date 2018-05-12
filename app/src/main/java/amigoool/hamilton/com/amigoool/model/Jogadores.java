@@ -3,25 +3,21 @@ package amigoool.hamilton.com.amigoool.model;
 import java.io.Serializable;
 
 /**
- * Created by Hamilton on 05/04/2018.
+ * Created by Hamilton on 12/04/2018.
  */
 
-public class Jogadores implements Serializable {
+public class Jogadores implements Serializable{
 
-
-    private int id, numero;
-    private String nome, posicao;
-    private Time time;
+    private int id, idTime;
+    private String nome;
 
     public Jogadores() {
     }
 
-    public Jogadores(int id, int numero, String nome, String posicao, Time time) {
+    public Jogadores(int id, int idTime, String nome) {
         this.id = id;
-        this.numero = numero;
+        this.idTime = idTime;
         this.nome = nome;
-        this.posicao = posicao;
-        this.time = time;
     }
 
     public int getId() {
@@ -32,12 +28,12 @@ public class Jogadores implements Serializable {
         this.id = id;
     }
 
-    public int getNumero() {
-        return numero;
+    public int getIdTime() {
+        return idTime;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setIdTime(int idTime) {
+        this.idTime = idTime;
     }
 
     public String getNome() {
@@ -46,21 +42,5 @@ public class Jogadores implements Serializable {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getPosicao() {
-        return posicao;
-    }
-
-    public void setPosicao(String posicao) {
-        this.posicao = posicao;
-    }
-
-    public Time getTime() {
-        return time;
-    }
-
-    public void setTime(Time time) {
-        this.time = time;
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="amigoool.hamilton.com.amigoool.Rodada">
+    tools:context="amigoool.hamilton.com.amigoool.RodadaActivity">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -16,8 +16,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView8"
@@ -44,16 +46,80 @@
             android:textSize="18sp"
             android:textStyle="bold|italic" />
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="228dp" />
-
         <Space
             android:layout_width="match_parent"
-            android:layout_height="37dp" />
+            android:layout_height="21dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textoTime1Id"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp" />
+
+                <TextView
+                    android:id="@+id/textoTime2Id"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/textoTime1Id"
+                    android:layout_marginEnd="19dp" />
+
+                <TextView
+                    android:id="@+id/textoTime3Id"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="98dp" />
+
+                <TextView
+                    android:id="@+id/textoTime4Id"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textoTime2Id"
+                    android:layout_alignTop="@+id/textoTime3Id"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textoTime1Id"
+                    android:layout_centerHorizontal="true"
+                    android:text="X"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textoTime3Id"
+                    android:layout_centerHorizontal="true"
+                    android:text="X"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </RelativeLayout>
+        </LinearLayout>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/botaoGerarRodadaId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gerar Rodada" />
+
+        <Button
+            android:id="@+id/btnChamarPlacar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif"

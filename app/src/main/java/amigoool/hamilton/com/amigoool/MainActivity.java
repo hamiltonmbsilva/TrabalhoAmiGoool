@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         BotaoTelaPrincipal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent itn = new Intent(getApplicationContext(),TelaPrincipal.class);
+                Intent itn = new Intent(getApplicationContext(),TelaPrincipalActivity.class);
 
                 startActivityForResult(itn, Tela_Principal);
 

@@ -16,11 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TelaPrincipal" />
-        <activity android:name=".Cadastrar_Amigos" />
-        <activity android:name=".Times" />
-        <activity android:name=".Rodada" />
-        <activity android:name=".Placar"></activity>
+        <activity android:name=".TelaPrincipalActivity" />
+        <activity android:name=".Cadastrar_AmigosActivity" />
+        <activity android:name=".TimesActivity" />
+        <activity android:name=".RodadaActivity" />
+        <activity android:name=".PlacarActivity"></activity>
     </application>
 
 </manifest>

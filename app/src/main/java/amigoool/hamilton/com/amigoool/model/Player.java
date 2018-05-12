@@ -4,23 +4,23 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by Hamilton on 05/04/2018.
+ * Created by Hamilton on 12/04/2018.
  */
 
-public class Time implements Serializable {
+public class Player implements Serializable {
 
     private int id;
     private String nome;
-    private ArrayList<Jogadores> jogadores;
+    private Time times;
 
-    public Time() {
 
+    public Player() {
     }
 
-    public Time(int id, String nome, ArrayList<Jogadores> jogadores) {
+    public Player(int id, String nome, Time times) {
         this.id = id;
         this.nome = nome;
-        this.jogadores = jogadores;
+        this.times = times;
     }
 
     public int getId() {
@@ -39,11 +39,11 @@ public class Time implements Serializable {
         this.nome = nome;
     }
 
-    public ArrayList<Jogadores> getJogadores() {
-        return jogadores;
+    public Time getTimes() {
+        return times;
     }
 
-    public void setJogadores(ArrayList<Jogadores> jogadores) {
-        this.jogadores = jogadores;
+    public void setTimes(Time times) {
+        this.times = times;
     }
 }

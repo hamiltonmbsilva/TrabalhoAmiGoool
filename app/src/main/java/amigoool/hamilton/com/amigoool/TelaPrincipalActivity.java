@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class TelaPrincipal extends AppCompatActivity {
+public class TelaPrincipalActivity extends AppCompatActivity {
 
     Button BotaoCadastrarAmigos, BotaoGerarRodada;
     final int Tela_Cadastrar_Amigos = 1;
@@ -22,7 +22,7 @@ public class TelaPrincipal extends AppCompatActivity {
         BotaoCadastrarAmigos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent itn = new Intent(getApplicationContext(),Cadastrar_Amigos.class);
+                Intent itn = new Intent(getApplicationContext(),Cadastrar_AmigosActivity.class);
                 startActivityForResult(itn, Tela_Cadastrar_Amigos);
             }
         });
@@ -30,8 +30,10 @@ public class TelaPrincipal extends AppCompatActivity {
         BotaoGerarRodada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent itn = new Intent(getApplicationContext(),Rodada.class);
+                Intent itn = new Intent(getApplicationContext(),RodadaActivity.class);
                 startActivityForResult(itn, Tela_Gerar_Rodada);
+
+
             }
         });
     }
@@ -39,6 +41,6 @@ public class TelaPrincipal extends AppCompatActivity {
     private void binding() {
 
         BotaoCadastrarAmigos = findViewById(R.id.btnCadastrarAmigos);
-        BotaoGerarRodada = findViewById(R.id.btnGerarRodada);
+        BotaoGerarRodada = findViewById(R.id.btnGerarRodadaId);
     }
 }
